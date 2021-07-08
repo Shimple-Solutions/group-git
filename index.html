@@ -4,11 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Home Page</title>
+    <style>
+      body {
+          margin: 0px;
+      }
+      img{
+        padding: 20px;
+      }
+
+      h1 {
+        color: maroon;
+        margin-left: 40px;
+      }
+      #box {
+        display: flex;
+        border-style: solid;
+        border-color: grey;
+        border-width: 1px;
+        order: 2;
+      }
+
+      #box2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: flex-start;
+        width: 100%;
+      }
+
+      button{
+          background-color: purple;
+          color:white;
+      }
+    </style>
     <link rel="stylesheet" type="text/css" href="index.css">
   </head>
   <body>
-    <header id="navbar">
+    
+        <header id="navbar">
       <nav class="navbar-container">
         <a href="index.html" class="home-link"> THE GROUP PROJECT </a>
         <div class="navbar-menu">
@@ -19,5 +55,23 @@
         </div>
       </nav>
     </header>
+      
+    <div id="box">
+      <img src="https://via.placeholder.com/450" />
+    <div id="box2">
+      <p>This is something exciting</p>
+      <a href="learn.html"><button>Learn More</button></a>
+      </div>
+    </div>
+
+    </div>
+    <div id="box">
+      <img src="https://via.placeholder.com/450" />
+      <div id="box2">
+      <p>This is not something exciting :(</p>
+      <button>Learn More</button>
+    </div>
+    </div>
+
   </body>
 </html>
